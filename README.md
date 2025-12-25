@@ -76,7 +76,3 @@
 
 - Pra-rilis: fitur inti sudah stabil, distribusi masih lewat GitHub.
 - Saran/bug: laporkan via Issues di repo ini.
-
-<p align="center">
-  Made with ❤️ oleh Zero Dev
-</p>
