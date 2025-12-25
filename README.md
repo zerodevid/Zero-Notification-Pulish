@@ -17,54 +17,65 @@
 
 ---
 
-## 💡 Kenapa berguna
+## 🚀 Download
 
-- Memastikan notifikasi penting tetap terdengar saat berkendara, berolahraga, atau layar terkunci.
-- Mode headset/speaker terpisah supaya suara tidak bocor ke publik.
-- Filter kata dan ban words menjaga privasi pesan yang tidak ingin dibacakan.
-- Riwayat notifikasi membantu meninjau pesan yang pernah masuk.
+- GitHub Releases: segera tersedia. Saat ini build sendiri via Android Studio jika ingin mencoba lebih awal.
+- Support: buka tab Issues untuk kendala instalasi atau bug.
+
+## 💡 Mengapa Penting
+
+- Notifikasi penting tetap terdengar saat berkendara, berolahraga, atau layar terkunci.
+- Mode Headset vs Speaker menjaga privasi di ruang publik.
+- Filter/ban words menyensor kata yang tidak ingin dibacakan.
+- Riwayat notifikasi membantu meninjau pesan yang terlewat.
 
 ## ✨ Fitur Utama
 
-- Text-to-Speech untuk semua aplikasi yang Anda pilih.
-- Mode Headset dan Mode Speaker dengan kontrol cepat via Quick Settings Tile.
-- Filter Words dan Ban Words untuk sensor otomatis.
-- Batas kata dan deteksi duplikasi agar TTS tetap ringkas.
-- Riwayat notifikasi (Room DB) yang bisa dilihat ulang.
-- Multi bahasa TTS, dukungan silent mode, opsi layar menyala, dan hentikan bacaan dengan goyang ponsel.
+- Text-to-Speech untuk aplikasi yang Anda pilih.
+- Quick Settings Tile untuk mengaktifkan mode dengan sekali tap.
+- Batas kata, deteksi duplikasi, dan hentikan bacaan dengan goyang ponsel.
+- Multi bahasa TTS, dukungan silent mode, dan opsi tidak membaca saat layar menyala.
 
-## 🖼️ Tampilan (Screenshots)
+## 🎯 Kapan Cocok Dipakai
+
+- Saat berkendara dan butuh mendengar pesan tanpa menyentuh layar.
+- Saat meeting/olahraga dengan headset, agar notifikasi penting tetap masuk tanpa mengganggu.
+- Saat ponsel di kantong atau layar terkunci, namun tidak ingin melewatkan informasi.
+
+## 🌍 Bahasa & Suara
+
+- Mendukung bahasa yang tersedia di engine TTS Anda (Google TTS direkomendasikan).
+- Atur bahasa dan suara langsung di pengaturan TTS ponsel, lalu gunakan di aplikasi ini.
+
+## 🖼️ Tampilan
 
 | Beranda | Pengaturan | Widget |
 | --- | --- | --- |
 | <img src="screenshots/main.png" alt="Tampilan utama Zero Notification" width="260"/> | <img src="screenshots/setting.png" alt="Pengaturan Zero Notification" width="260"/> | <img src="screenshots/widget.png" alt="Widget Zero Notification" width="260"/> |
 
-## 🧭 Cara Pakai Singkat
+## 🧭 Cara Pakai
 
-1. Install APK dari GitHub Releases (atau build sendiri).
-2. Buka Zero Notification dan ikuti intro untuk memberi izin Akses Notifikasi serta pengecualian baterai jika diperlukan.
-3. Pilih aplikasi yang ingin dibacakan notifikasinya dan atur mode output (headset atau speaker).
-4. Tambahkan filter/ban words jika ada kata yang tidak ingin dibacakan.
-5. Uji dengan mengirim notifikasi dari aplikasi pilihan; TTS akan membacakan sesuai aturan yang diaktifkan.
+1. Pasang APK dari GitHub Releases (atau build sendiri di Android Studio).
+2. Buka aplikasi, ikuti intro, aktifkan Akses Notifikasi dan pengecualian baterai bila diperlukan.
+3. Pilih aplikasi yang ingin dibacakan, setel mode headset atau speaker.
+4. Tambahkan filter/ban words untuk menjaga privasi kata tertentu.
+5. Kirim notifikasi uji; suara akan dibacakan sesuai pengaturan Anda.
 
-## 🔔 Alur Notifikasi Singkat
+## 🔒 Privasi & Izin
 
-1. NotificationListenerService menangkap notifikasi masuk.
-2. Pengecekan kondisi: aplikasi terdaftar, mode senyap/layar, koneksi headset, duplikasi, serta ban words.
-3. Jika lolos, pesan diproses (judul, isi, batas kata) lalu dikirim ke layanan TTS.
-4. Suara diputar melalui speaker/headset dan disimpan ke riwayat.
+- Data notifikasi diproses di perangkat dan bisa disaring dengan filter/ban words.
+- Memerlukan: Akses Notifikasi dan engine Text-to-Speech (disarankan Google TTS). Pengecualian baterai opsional agar layanan tetap aktif.
 
-## ⚙️ Izin & Kebutuhan
+## ❓ FAQ Ringkas
 
-- Android 7.0 (API 24)+
-- Akses Notifikasi (wajib)
-- Text-to-Speech Engine (disarankan Google TTS)
-- Pengecualian optimasi baterai (opsional, untuk memastikan layanan tetap aktif)
+- **Apakah membaca seluruh isi chat?** Hanya judul dan teks notifikasi yang dikirim aplikasi; bisa dibatasi dengan filter/ban words.
+- **Bisa dimatikan cepat?** Ya, lewat Quick Settings Tile atau matikan akses notifikasi dari dalam aplikasi.
+- **Kenapa suara tidak keluar?** Pastikan TTS aktif, volume media tidak nol, dan mode output (headset/speaker) sesuai perangkat yang terhubung.
 
-## ℹ️ Info Singkat
+## 📣 Status & Masukan
 
-- App ini masih tahap pra-rilis. Jika menemukan bug atau punya masukan, buka tab Issues di GitHub.
-- Semua data notifikasi hanya diproses di perangkat dan bisa disaring dengan filter/ban words untuk privasi.
+- Pra-rilis: fitur inti sudah stabil, distribusi masih lewat GitHub.
+- Saran/bug: laporkan via Issues di repo ini.
 
 <p align="center">
   Made with ❤️ oleh Zero Dev
